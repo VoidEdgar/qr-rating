@@ -1,8 +1,7 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  output: "export", // Ensures proper deployment on Vercel
-  trailingSlash: true, // Helps with routing issues
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export", // Required for static deployment
+  trailingSlash: true, // Fixes routing issues
 };
 
 export default nextConfig;
